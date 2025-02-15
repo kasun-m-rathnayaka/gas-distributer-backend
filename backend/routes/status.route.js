@@ -1,8 +1,9 @@
 import {Router} from "express";
-import {changeStatus} from "../controllers/status.controller.js";
+import {changeStatus, checkStatus} from "../controllers/status.controller.js";
 
 const statusRoute = Router();
 
 statusRoute.patch('/', changeStatus);
+statusRoute.get('/:id', checkStatus);
 
 export default statusRoute
