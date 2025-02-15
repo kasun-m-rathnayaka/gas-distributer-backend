@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80bf9793-668b-47e8-b250-dc5470755338" name="Changes" comment="removed frontend">
+    <list default="true" id="80bf9793-668b-47e8-b250-dc5470755338" name="Changes" comment="check outlet info, with stock info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/status.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/status.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/status.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/status.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +116,7 @@
       <workItem from="1739549886724" duration="140000" />
       <workItem from="1739550042060" duration="9206000" />
       <workItem from="1739585426566" duration="741000" />
-      <workItem from="1739621312273" duration="1634000" />
+      <workItem from="1739621312273" duration="2851000" />
     </task>
     <task id="LOCAL-00001" summary="express initialization">
       <option name="closed" value="true" />
@@ -162,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739560119395</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="check outlet info, with stock info">
+      <option name="closed" value="true" />
+      <created>1739625358015</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739625358015</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +189,7 @@
     <MESSAGE value="define controllers, define db" />
     <MESSAGE value="check status, defined routes" />
     <MESSAGE value="removed frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed frontend" />
+    <MESSAGE value="check outlet info, with stock info" />
+    <option name="LAST_COMMIT_MESSAGE" value="check outlet info, with stock info" />
   </component>
 </project>
