@@ -12,7 +12,7 @@ const consumerSchema = new mongoose.Schema({
         lowercase: true,
         match: [/^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$/, 'Please fill a valid email address']
     },
-    password: {type: String, required: true, trim: true, minLength: 6},
+    password: {type: String, required: true, trim: true, minLength: 3},
     contactNumber: {type: String, required: true, trim: true, maxLength: 12},
     street: {type: String, required: true, maxLength:50},
     city: {type: String, required: true, maxLength:50},

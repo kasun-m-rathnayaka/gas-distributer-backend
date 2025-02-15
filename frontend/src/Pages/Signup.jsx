@@ -26,8 +26,6 @@ const Signup = ({togglePopup}) => {
         try {
             axios.post('http://localhost:3001/api/v1/auth/sign-up', {formData});
             toast.success('User created successfully');
-            togglePopup();
-
         } catch (error) {
             toast.error(error.response.data.message);
         }

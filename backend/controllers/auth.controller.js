@@ -74,8 +74,8 @@ export const signUp = async (req, res) => {
 
 export const signIn = async (req, res) => {
     try {
-        const {email, password} = req.body
-        const user = await Consumer.findOne({email})
+        const {username, password} = req.body
+        const user = await Consumer.findOne({username: username})
 
         if (!user) {
             return res.status(404).json({message: "User not found"})

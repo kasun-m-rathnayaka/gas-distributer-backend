@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useContext, useState} from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
@@ -26,12 +26,14 @@ import OutletDeliveries from "./Pages/Outlet/OutletDeliveries";
 import OutletPerformance from "./Pages/Outlet/OutletPerformance";
 import Customer from "./Pages/Outlet/Customer";
 import OutletList from "./Pages/Admin/OutletList";
+import {authcontext} from "../context/authcontext.jsx";
 
 function App() {
-  const [showLogin, setShowLogin] = useState(false);
-  const [showSignup, setShowSignup] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userRole, setUserRole] = useState(""); // Track user role
+  const { showLogin, setShowLogin, showSignup, setShowSignup, isLoggedIn, setIsLoggedIn, userRole, setUserRole } = useContext(authcontext);
+  // const [showLogin, setShowLogin] = useState(false);
+  // const [showSignup, setShowSignup] = useState(false);
+  // const [isLoggedIn, setIsLoggedIn] = useState(true);
+  // const [userRole, setUserRole] = useState("admin"); // Track user role
 
   const [activeSection, setActiveSection] = useState("home");
 
@@ -51,8 +53,8 @@ function App() {
       {showLogin && !isLoggedIn && (
         <Login
           togglePopup={() => setShowLogin(false)}
-          setIsLoggedIn={setIsLoggedIn}
-          setUserRole={setUserRole} // ✅ Pass user role state
+          // setIsLoggedIn={setIsLoggedIn}
+          // setUserRole={setUserRole} // ✅ Pass user role state
         />
       )}
       {showSignup && <Signup togglePopup={() => setShowSignup(false)} />}
