@@ -7,12 +7,13 @@ import statusRoute from "./routes/status.route.js";
 import tokenRoute from "./routes/token.route.js";
 import errorMiddleware from "./middleware/error.middleware.js";
 import connectToDatabase from "./database/mongodb.js";
+import cors from 'cors';
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
-
+app.use(cors())
 // '/api/v1/' Middleware
 app.use('/api/v1/users', usersRoute)
 app.use('/api/v1/token', tokenRoute)

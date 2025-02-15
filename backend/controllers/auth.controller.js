@@ -9,30 +9,55 @@ export const signUp = async (req, res) => {
     session.startTransaction()
 
     try {
-        const {name, email, password, phoneNumber, nic, street, city, consumerType} = req.body;
+        const {
+            firstname,
+            lastname,
+            username,
+            email,
+            password,
+            contactNumber,
+            streetLine1,
+            streetLine2,
+            city
+        } = req.body.formData;
+
         const existingUser = await Consumer.findOne({email})
 
         if (existingUser) {
-            const error = res.status(409).json({message: "User already exists"})
-            throw error
+            return res.status(409).json({message: "User already exists"})
         }
 
         // hash password
         const salt = await bcrypt.genSalt(10)
         const hashedPassword = await bcrypt.hash(password, salt)
 
-        const newUser = await Consumer.create([{
-            name,
+        console.log({
+            firstname,
+            lastname,
+            username,
             email,
             password: hashedPassword,
-            phoneNumber,
-            nic,
-            street,
-            city,
-            consumerType
+            contactNumber,
+            street: streetLine1 + ' ' + streetLine2,
+            city
+        })
+
+        const newUser = await Consumer.create([{
+            firstname,
+            lastname,
+            username,
+            email,
+            password: hashedPassword,
+            contactNumber,
+            street: streetLine1 + ' ' + streetLine2,
+            city
         }], {session})
 
-        const token = jwt.sign({email: newUser.email, id: newUser._id}, JWT_SECRET, {expiresIn: JWT_EXPIRE})
+        const token = jwt.sign({
+            email: newUser.email,
+            id: newUser._id,
+            username: username
+        }, JWT_SECRET, {expiresIn: JWT_EXPIRE})
 
         await session.commitTransaction()
         session.endSession()
