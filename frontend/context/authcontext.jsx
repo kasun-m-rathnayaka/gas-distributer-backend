@@ -5,8 +5,8 @@ const authcontext = createContext();
 const AuthProvider = ({children}) => {
     const [showLogin, setShowLogin] = useState(false);
     const [showSignup, setShowSignup] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
-    const [userRole, setUserRole] = useState("admin");
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [userRole, setUserRole] = useState("");
 
     return (
         <authcontext.Provider value={{
