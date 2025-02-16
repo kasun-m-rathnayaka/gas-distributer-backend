@@ -9,7 +9,7 @@ const gasstockSchema = new mongoose.Schema({
     status: {
         type: String,
         required: true,
-        enum: ['available', 'unavailable'],
+        enum: ["All", "Pending", "Approved", "Delivered", "Cancelled", "In Progress"],
         default: 'available',
     },
     date: {

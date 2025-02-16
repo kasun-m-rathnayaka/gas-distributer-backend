@@ -8,6 +8,7 @@ import tokenRoute from "./routes/token.route.js";
 import errorMiddleware from "./middleware/error.middleware.js";
 import connectToDatabase from "./database/mongodb.js";
 import cors from 'cors';
+import outletRoute from "./routes/outlet.route.js";
 
 const app = express();
 app.use(express.json());
@@ -19,6 +20,7 @@ app.use('/api/v1/users', usersRoute)
 app.use('/api/v1/token', tokenRoute)
 app.use('/api/v1/auth', authRoute)
 app.use('/api/v1/status', statusRoute)
+app.use('/api/v1/outlet', outletRoute)
 
 app.use(errorMiddleware);
 
