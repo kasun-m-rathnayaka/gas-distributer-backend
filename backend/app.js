@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(cors())
+
 // '/api/v1/' Middleware
 app.use('/api/v1/users', usersRoute)
 app.use('/api/v1/token', tokenRoute)

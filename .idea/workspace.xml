@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80bf9793-668b-47e8-b250-dc5470755338" name="Changes" comment="mark the status of the requests upon receiving empties and payments">
+    <list default="true" id="80bf9793-668b-47e8-b250-dc5470755338" name="Changes" comment="enabled default auth config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Admin/Admindash.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Admin/Admindash.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +124,8 @@
       <workItem from="1739638936319" duration="6041000" />
       <workItem from="1739670925682" duration="220000" />
       <workItem from="1739679150333" duration="6160000" />
+      <workItem from="1739706402797" duration="2900000" />
+      <workItem from="1739719553725" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="express initialization">
       <option name="closed" value="true" />
@@ -197,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739683597145</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="enabled default auth config">
+      <option name="closed" value="true" />
+      <created>1739686549114</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739686549114</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +234,7 @@
     <MESSAGE value="implimented sign up functionality" />
     <MESSAGE value="implimented sign up functionality, configured authcontext.jsx" />
     <MESSAGE value="mark the status of the requests upon receiving empties and payments" />
-    <option name="LAST_COMMIT_MESSAGE" value="mark the status of the requests upon receiving empties and payments" />
+    <MESSAGE value="enabled default auth config" />
+    <option name="LAST_COMMIT_MESSAGE" value="enabled default auth config" />
   </component>
 </project>
