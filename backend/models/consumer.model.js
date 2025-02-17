@@ -18,6 +18,7 @@ const consumerSchema = new mongoose.Schema({
     city: {type: String, required: true, maxLength:50},
     dilivaryId: {type:mongoose.Schema.Types.ObjectId, ref: 'Dilivary', required: false},
     tokenId: {type:mongoose.Schema.Types.ObjectId, ref: 'Token', required: false},
+    role: {type: String, required: false, enum: ['admin', 'user'], default: 'user'},
 }, {timestamps: true});
 
 const Consumer = mongoose.model('Consumer', consumerSchema);

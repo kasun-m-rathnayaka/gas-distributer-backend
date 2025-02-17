@@ -21,7 +21,7 @@ const Login = ({togglePopup }) => {
                 .then((res) => {
                     localStorage.setItem("user", JSON.stringify(res.data));
                     setIsLoggedIn(true);
-                    setUserRole("admin");
+                    setUserRole(res.data.data.role || "user");
                 })
         } catch (error) {
             toast.error("Invalid Credentials"+error);

@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="80bf9793-668b-47e8-b250-dc5470755338" name="Changes" comment="enabled default auth config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/consumer.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/consumer.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +127,10 @@
       <workItem from="1739679150333" duration="6160000" />
       <workItem from="1739706402797" duration="2900000" />
       <workItem from="1739719553725" duration="11000" />
+      <workItem from="1739722293158" duration="135000" />
+      <workItem from="1739754738210" duration="4000" />
+      <workItem from="1739814162231" duration="447000" />
+      <workItem from="1739814659406" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="express initialization">
       <option name="closed" value="true" />
