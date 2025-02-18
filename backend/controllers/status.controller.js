@@ -10,7 +10,7 @@ export const changeStatus = async (req, res) => {
     try {
         const {id, status} = req.body
 
-        const newStatus = await RequestModel.findByIdAndUpdate(id, {status}, {session})
+        await RequestModel.findByIdAndUpdate(id, {status}, {session})
 
         await session.commitTransaction()
         await session.endSession()
